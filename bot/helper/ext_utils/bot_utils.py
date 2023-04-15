@@ -41,18 +41,18 @@ class MirrorStatus:
         STATUS_SEEDING = "🌧 Seed"
         STATUS_CONVERTING = "↔️ Convert"
     else:
-        STATUS_UPLOADING = "Upload"
-        STATUS_DOWNLOADING = "Download"
-        STATUS_CLONING = "Clone"
-        STATUS_QUEUEDL = "QueueDl"
-        STATUS_QUEUEUP = "QueueUp"
-        STATUS_PAUSED = "Pause"
-        STATUS_ARCHIVING = "Archive"
-        STATUS_EXTRACTING = "Extract"
-        STATUS_SPLITTING = "Split"
-        STATUS_CHECKING = "CheckUp"
-        STATUS_SEEDING = "Seed"
-        STATUS_CONVERTING = "↔️ Convert"
+        STATUS_UPLOADING = "Uploading...📤"
+        STATUS_DOWNLOADING = "Downloading...📥"
+        STATUS_CLONING = "Cloning...♻️"
+        STATUS_QUEUEDL = "QueueDl...💤"
+        STATUS_QUEUEUP = "QueueUp...💤"
+        STATUS_PAUSED = "Paused...⏸️"
+        STATUS_ARCHIVING = "Archiving...🔐"
+        STATUS_EXTRACTING = "Extracting...📂"
+        STATUS_SPLITTING = "Splitting...✂️"
+        STATUS_CHECKING = "CheckingUp...📝"
+        STATUS_SEEDING = "Seeding...🌧"
+        STATUS_CONVERTING = "↔️ Converting..."
 
 class EngineStatus:
     STATUS_ARIA = "Aria2c📶"
@@ -236,7 +236,7 @@ def get_progress_bar_string(status):
 
 def get_readable_message():
     with download_dict_lock:
-        msg = f""
+        msg = '<b>Powered By <a href="https://t.me/DhruvMirrorUpdates"><u>Dhruv Mirror Premium</u></a>\n</b>'
         if STATUS_LIMIT := config_dict['STATUS_LIMIT']:
             tasks = len(download_dict)
             global pages

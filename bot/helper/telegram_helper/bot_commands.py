@@ -11,7 +11,7 @@ def getCommand(name: str, command: str):
 
 class _BotCommands:
     def __init__(self):
-        self.StartCommand = getCommand(f'START_COMMAND', f'start{CMD_SUFFIX}')
+        self.StartCommand = getCommand(f'START_COMMAND', f'start')
         self.MirrorCommand = getCommand(f'MIRROR_COMMAND', f'mirror{CMD_SUFFIX}'), f'm{CMD_SUFFIX}'
         self.UnzipMirrorCommand = getCommand(f'UNZIP_COMMAND', f'unzipmirror{CMD_SUFFIX}'), f'uzm{CMD_SUFFIX}'
         self.ZipMirrorCommand = getCommand(f'ZIP_COMMAND', f'zipmirror{CMD_SUFFIX}'), f'zm{CMD_SUFFIX}'
@@ -37,18 +37,18 @@ class _BotCommands:
         self.CancelAllCommand = getCommand(f'CANCEL_ALL_COMMAND', f'cancelall{CMD_SUFFIX}')
         self.ListCommand = getCommand(f'LIST_COMMAND', f'list{CMD_SUFFIX}')
         self.SearchCommand = getCommand(f'SEARCH_COMMAND', f'search{CMD_SUFFIX}')
-        self.StatusCommand = getCommand(f'STATUS_COMMAND', f'status{CMD_SUFFIX}')
-        self.UsersCommand = getCommand(f'USERS_COMMAND', f'users{CMD_SUFFIX}')
+        self.StatusCommand = getCommand(f'STATUS_COMMAND', f'status')
+        self.UsersCommand = getCommand(f'USERS_COMMAND', f'users')
         self.PaidUsersCommand = getCommand(f'PAID_COMMAND', f'paid{CMD_SUFFIX}')
         self.AddPaidCommand = getCommand(f'ADDPAID_COMMAND', f'addpaid{CMD_SUFFIX}')
         self.RmPaidCommand = getCommand(f'RMPAID_COMMAND', f'rmpaid{CMD_SUFFIX}')
-        self.AuthorizeCommand = getCommand(f'AUTH_COMMAND', f'authorize{CMD_SUFFIX}')
-        self.UnAuthorizeCommand = getCommand(f'UNAUTH_COMMAND', f'unauthorize{CMD_SUFFIX}')
-        self.AddSudoCommand = getCommand(f'ADDSUDO_COMMAND', f'addsudo{CMD_SUFFIX}')
-        self.RmSudoCommand = getCommand(f'RMSUDO_COMMAND', f'rmsudo{CMD_SUFFIX}')
-        self.PingCommand = getCommand(f'PING_COMMAND', f'ping{CMD_SUFFIX}')
+        self.AuthorizeCommand = getCommand(f'AUTH_COMMAND', f'authorize')
+        self.UnAuthorizeCommand = getCommand(f'UNAUTH_COMMAND', f'unauthorize')
+        self.AddSudoCommand = getCommand(f'ADDSUDO_COMMAND', f'addsudo')
+        self.RmSudoCommand = getCommand(f'RMSUDO_COMMAND', f'rmsudo')
+        self.PingCommand = getCommand(f'PING_COMMAND', f'ping')
         self.RestartCommand =  getCommand(f'RESTART_COMMAND', f'restart{CMD_SUFFIX}')
-        self.StatsCommand = getCommand(f'STATS_COMMAND', f'stats{CMD_SUFFIX}')
+        self.StatsCommand = getCommand(f'STATS_COMMAND', f'stats')
         self.HelpCommand = getCommand(f'HELP_COMMAND', f'help{CMD_SUFFIX}')
         self.LogCommand = getCommand(f'LOG_COMMAND', f'log{CMD_SUFFIX}')
         self.BtSelectCommand = getCommand(f'BTSEL_COMMAND', f'btsel{CMD_SUFFIX}')

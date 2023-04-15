@@ -33,12 +33,12 @@ default_values = {'AUTO_DELETE_MESSAGE_DURATION': 30,
                   'START_BTN1_NAME': 'Master',
                   'START_BTN1_URL': 'https://t.me/krn_adhikari',
                   'START_BTN2_NAME': 'Support Group',
-                  'START_BTN2_URL': 'https://t.me/WeebZone_updates',
+                  'START_BTN2_URL': 'https://t.me/DhruvMirrorUpdates',
                   'AUTHOR_NAME': 'WZML',
-                  'AUTHOR_URL': 'https://t.me/WeebZone_updates',
-                  'TITLE_NAME': 'WeebZone',
-                  'GD_INFO': 'Uploaded by WeebZone Mirror Bot',
-                  'CREDIT_NAME': 'WeebZone',
+                  'AUTHOR_URL': 'https://t.me/DhruvMirrorUpdates',
+                  'TITLE_NAME': 'DhruvMirrorUpdates',
+                  'GD_INFO': 'Uploaded Dhruv Mirror Bot',
+                  'CREDIT_NAME': 'DhruvMirrorUpdates',
                   'NAME_FONT': 'code',
                   'CAPTION_FONT': 'code',
                   'FINISHED_PROGRESS_STR': '█',
@@ -491,7 +491,7 @@ def load_config():
     START_BTN2_URL = environ.get('START_BTN2_URL', '')
     if len(START_BTN2_NAME) == 0 or len(START_BTN2_URL) == 0:   
         START_BTN2_NAME = 'Support Group'
-        START_BTN2_URL = 'https://t.me/WeebZone_updates'
+        START_BTN2_URL = 'https://t.me/DhruvMirrorUpdates'
 
     BUTTON_FOUR_NAME = environ.get('BUTTON_FOUR_NAME', '')
     BUTTON_FOUR_URL = environ.get('BUTTON_FOUR_URL', '')
@@ -569,19 +569,19 @@ def load_config():
 
     AUTHOR_URL = environ.get('AUTHOR_URL', '')
     if len(AUTHOR_URL) == 0:    
-        AUTHOR_URL = 'https://t.me/WeebZone_updates'
+        AUTHOR_URL = 'https://t.me/DhruvMirrorUpdates'
 
     TITLE_NAME = environ.get('TITLE_NAME', '')
     if len(TITLE_NAME) == 0:    
-        TITLE_NAME = 'WeebZone'
+        TITLE_NAME = 'DhruvMirror'
 
     GD_INFO = environ.get('GD_INFO', '')
     if len(GD_INFO) == 0:   
-        GD_INFO = 'Uploaded by WeebZone Mirror Bot'
+        GD_INFO = 'Uploaded by Premium Mirror Bot'
 
     CREDIT_NAME = environ.get('CREDIT_NAME', '')
     if len(CREDIT_NAME) == 0:   
-        CREDIT_NAME = 'WeebZone'
+        CREDIT_NAME = 'DhruvMirror'
 
     NAME_FONT = environ.get('NAME_FONT', '')
     if len(NAME_FONT) == 0: 
